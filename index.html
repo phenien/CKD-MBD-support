@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CKD-MBD Decision-Maker - Professional clinical decision support tool for healthcare professionals managing Chronic Kidney Disease - Mineral and Bone Disorder.">
-    <meta name="keywords" content="CKD, nephrology, calcium, phosphate, PTH, kidney disease, medical calculator, clinical, KDIGO">
-    <title>CKD-MBD Decision-Maker Support</title>
+    <meta name="description" content="Support for CKD-MBD Decision-Maker - Get help and contact us">
+    <title>Support - CKD-MBD Decision-Maker</title>
     <style>
         * {
             margin: 0;
@@ -23,7 +22,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: white;
             border-radius: 16px;
@@ -34,94 +33,48 @@
         .header {
             background: linear-gradient(135deg, #138ce5 0%, #1a9fff 100%);
             color: white;
-            padding: 60px 40px;
+            padding: 50px 40px;
             text-align: center;
-        }
-
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 20px;
-            background: white;
-            border-radius: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 48px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
 
         h1 {
             font-size: 2.5em;
             font-weight: 700;
             margin-bottom: 10px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .tagline {
+        .subtitle {
             font-size: 1.2em;
             opacity: 0.95;
-            font-weight: 300;
-            margin-top: 10px;
         }
 
         .content {
             padding: 50px 40px;
         }
 
-        .section {
-            margin-bottom: 40px;
-        }
-
         h2 {
             color: #138ce5;
             font-size: 1.8em;
+            margin-top: 40px;
             margin-bottom: 20px;
             font-weight: 600;
         }
 
-        h3 {
-            color: #0a5a9e;
-            font-size: 1.3em;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        p {
-            margin-bottom: 15px;
-            color: #555;
-            font-size: 1.05em;
-        }
-
-        .features {
-            list-style: none;
-            padding: 0;
-        }
-
-        .features li {
-            padding: 12px 0;
-            padding-left: 30px;
-            position: relative;
-            color: #555;
-            font-size: 1.05em;
-        }
-
-        .features li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #138ce5;
-            font-weight: bold;
-            font-size: 1.2em;
+        h2:first-of-type {
+            margin-top: 0;
         }
 
         .contact-box {
-            background: #f8f9fa;
+            background: #e3f2fd;
             border-left: 4px solid #138ce5;
-            padding: 25px;
+            padding: 20px;
             border-radius: 8px;
-            margin: 30px 0;
+            margin: 25px 0;
+        }
+
+        .contact-box h3 {
+            color: #0a5a9e;
+            margin-bottom: 10px;
         }
 
         .contact-box p {
@@ -139,48 +92,37 @@
             text-decoration: underline;
         }
 
+        .faq-item {
+            margin-bottom: 30px;
+        }
+
+        .faq-question {
+            color: #0a5a9e;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #555;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
         .button {
             display: inline-block;
             background: #138ce5;
             color: white;
-            padding: 12px 30px;
+            padding: 12px 24px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
             margin: 10px 10px 10px 0;
-            transition: background 0.3s ease;
+            transition: background 0.3s;
         }
 
         .button:hover {
             background: #0a5a9e;
-        }
-
-        .button.secondary {
-            background: #6c757d;
-        }
-
-        .button.secondary:hover {
-            background: #545b62;
-        }
-
-        .disclaimer {
-            background: #fff3cd;
-            border: 1px solid #ffc107;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 30px 0;
-        }
-
-        .disclaimer strong {
-            color: #856404;
-            display: block;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-
-        .disclaimer p {
-            color: #856404;
-            margin: 0;
         }
 
         .footer {
@@ -191,9 +133,13 @@
             border-top: 1px solid #e9ecef;
         }
 
-        .footer p {
-            margin: 5px 0;
-            font-size: 0.95em;
+        ul {
+            margin: 15px 0 15px 25px;
+        }
+
+        li {
+            margin: 8px 0;
+            color: #555;
         }
 
         @media (max-width: 768px) {
@@ -209,10 +155,6 @@
                 font-size: 2em;
             }
 
-            .tagline {
-                font-size: 1em;
-            }
-
             .content {
                 padding: 30px 20px;
             }
@@ -220,115 +162,155 @@
             .footer {
                 padding: 20px;
             }
+
+            h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div class="app-icon">🩺</div>
             <h1>CKD-MBD Decision-Maker</h1>
-            <p class="tagline">Professional clinical decision support for healthcare professionals</p>
+            <p class="subtitle">Support & Help Center</p>
         </div>
 
         <div class="content">
-            <div class="section">
-                <h2>About</h2>
-                <p><strong>CKD-MBD Decision-Maker</strong> is a professional clinical decision support tool designed for healthcare professionals managing Chronic Kidney Disease - Mineral and Bone Disorder (CKD-MBD). Make evidence-based treatment decisions with confidence using KDIGO guidelines.</p>
+            <div class="contact-box">
+                <h3>📧 Need Help?</h3>
+                <p>Email us at: <a href="mailto:smassservice@gmail.com" class="email-link">smassservice@gmail.com</a></p>
+                <p>We typically respond within 24-48 hours.</p>
             </div>
 
-            <div class="section">
-                <h2>Key Features</h2>
-                <ul class="features">
-                    <li><strong>Evidence-Based Calculator</strong> - Calculate CKD-MBD recommendations based on Calcium, Phosphate, and PTH levels following KDIGO guidelines</li>
-                    <li><strong>Patient Management</strong> - Create and manage patient profiles with demographics, calculation history, and clinical notes</li>
-                    <li><strong>Flexible Unit Systems</strong> - Support for both mmol/L and mg/dL measurements</li>
-                    <li><strong>Calculation History</strong> - Save and track all calculations with timestamps and clinical notes</li>
-                    <li><strong>Professional PDF Reports</strong> - Generate and share professional PDF reports for clinical documentation</li>
-                    <li><strong>Clinical Reference Library</strong> - Quick access to lab ranges, medication information, and KDIGO guidelines</li>
-                    <li><strong>Trend Analysis</strong> - Interactive charts showing lab value trends over time (Premium)</li>
-                    <li><strong>iCloud Sync</strong> - Automatic data synchronization across all your devices</li>
-                    <li><strong>Beautiful Interface</strong> - Modern design with dark mode support and full accessibility features</li>
-                </ul>
-            </div>
+            <h2>Quick Links</h2>
+            <a href="privacy.html" class="button">Privacy Policy</a>
+            <a href="#faq" class="button">FAQ</a>
+            <a href="mailto:support@paulhenien.com" class="button">Contact Us</a>
 
-            <div class="section">
-                <h2>Premium Features</h2>
-                <ul class="features">
-                    <li>Remove all advertisements</li>
-                    <li>Unlock trend analysis charts</li>
-                    <li>Priority support</li>
-                    <li>Future premium features</li>
-                </ul>
-            </div>
+            <h2 id="faq">Frequently Asked Questions</h2>
 
-            <div class="disclaimer">
-                <strong>⚠️ Medical Disclaimer</strong>
-                <p>This application is designed as a clinical decision support tool and should not replace professional medical judgment. All recommendations must be interpreted in the context of individual patient circumstances.</p>
-            </div>
-
-            <div class="section">
-                <h2>Download</h2>
-                <p>CKD-MBD Decision-Maker is available for iPhone and iPad running iOS 16.0 or later.</p>
-                <a href="https://apps.apple.com" class="button">Download on the App Store</a>
-            </div>
-
-            <div class="section">
-                <h2>Support</h2>
-                <p>If you need help with the <strong>CKD-MBD Decision-Maker</strong> app, or have feedback or questions, please contact:</p>
-                
-                <div class="contact-box">
-                    <p><strong>Email Support:</strong></p>
-                    <p><a href="mailto:smassservice@gmail.com" class="email-link">smassservice@gmail.com</a></p>
+            <div class="faq-item">
+                <div class="faq-question">What is CKD-MBD Decision-Maker?</div>
+                <div class="faq-answer">
+                    CKD-MBD Decision-Maker is a professional clinical decision support tool for healthcare professionals managing chronic kidney disease - mineral and bone disorder (CKD-MBD). It provides KDIGO guideline-based recommendations for calcium, phosphate, PTH, and vitamin D management.
                 </div>
-
-                <h3>Common Questions</h3>
-                
-                <p><strong>Q: How do I unlock premium features?</strong><br>
-                A: Tap Settings → Premium Upgrade, then follow the in-app purchase flow.</p>
-
-                <p><strong>Q: How do I export calculations?</strong><br>
-                A: Open any saved calculation and tap the "Export as PDF" button to share or save the report.</p>
-
-                <p><strong>Q: How do I sync across devices?</strong><br>
-                A: Enable iCloud in your iOS Settings → [Your Name] → iCloud, and make sure iCloud Drive is enabled. The app will automatically sync your data.</p>
-
-                <p><strong>Q: Can I change between mmol/L and mg/dL?</strong><br>
-                A: Yes! Go to Settings → Unit System and select your preferred measurement system.</p>
-
-                <p><strong>Q: Is my patient data secure?</strong><br>
-                A: Absolutely. All data is stored locally on your device and encrypted. If you use iCloud sync, Apple's encrypted storage is used. We never have access to your data.</p>
-
-                <a href="privacy.html" class="button secondary">View Privacy Policy</a>
             </div>
 
-            <div class="section">
-                <h2>App Information</h2>
-                <p><strong>Developer:</strong> Paul Henien</p>
-                <p><strong>Version:</strong> 1.0</p>
-                <p><strong>Platform:</strong> iOS 16.0+</p>
-                <p><strong>Category:</strong> Medical</p>
-                <p><strong>Price:</strong> Free with Premium Upgrade</p>
+            <div class="faq-item">
+                <div class="faq-question">How do I use the calculator?</div>
+                <div class="faq-answer">
+                    1. Enter patient lab values (calcium, phosphate, PTH, vitamin D)<br>
+                    2. Select the CKD stage<br>
+                    3. Tap "Calculate" to get treatment recommendations<br>
+                    4. Optionally save to a patient profile for tracking over time
+                </div>
             </div>
 
-            <div class="section">
-                <h2>Evidence-Based Medicine</h2>
-                <p>All recommendations in CKD-MBD Decision-Maker are based on <strong>Kidney Disease: Improving Global Outcomes (KDIGO)</strong> clinical practice guidelines for CKD-MBD management. The app is designed specifically for healthcare professionals including:</p>
-                <ul class="features">
-                    <li>Nephrologists</li>
-                    <li>Endocrinologists</li>
-                    <li>Physicians</li>
-                    <li>Healthcare teams managing CKD patients</li>
-                </ul>
+            <div class="faq-item">
+                <div class="faq-question">How do I remove ads?</div>
+                <div class="faq-answer">
+                    Go to Settings → Purchase "Remove Ads" for $4.99. This is a one-time purchase that permanently removes all advertisements from the app.
+                </div>
             </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I create a patient profile?</div>
+                <div class="faq-answer">
+                    1. Go to the Patients tab<br>
+                    2. Tap the + button<br>
+                    3. Enter patient information (only initials required)<br>
+                    4. Calculations can now be saved to this patient's history
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Does this app share my data?</div>
+                <div class="faq-answer">
+                    No. All patient data is stored locally on your device and optionally in your private iCloud account. We do not have access to your data. The free version displays ads via Google AdMob, which may collect device identifiers. See our <a href="privacy.html">Privacy Policy</a> for details.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I export calculations?</div>
+                <div class="faq-answer">
+                    Yes! After performing a calculation, tap "Export PDF" to generate a professional report that can be shared via email or saved to files.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I sync data across devices?</div>
+                <div class="faq-answer">
+                    The app uses iCloud Key-Value Storage to sync data across your Apple devices. Make sure iCloud is enabled in iOS Settings → [Your Name] → iCloud. Data syncs automatically when connected to the internet.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What are the sources for the recommendations?</div>
+                <div class="faq-answer">
+                    All recommendations are based on KDIGO (Kidney Disease: Improving Global Outcomes) 2017 Clinical Practice Guideline Update for CKD-MBD. You can view full citations in the app under Reference → Clinical Citations.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is this app HIPAA compliant?</div>
+                <div class="faq-answer">
+                    The app is designed with HIPAA-conscious principles (local-only data storage, no external data transmission, encryption via iOS). However, HIPAA compliance ultimately depends on how you use the app. Ensure you follow your organization's policies regarding mobile device use.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can this app prescribe medications?</div>
+                <div class="faq-answer">
+                    No. This app does NOT calculate drug dosages or prescribe medications. It provides general treatment recommendations based on lab values (e.g., "Consider phosphate binders" or "May need vitamin D supplementation"). All recommendations must be interpreted in the context of individual patient circumstances and should not replace professional medical judgment.
+                </div>
+            </div>
+
+            <h2>Troubleshooting</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">The app won't calculate</div>
+                <div class="faq-answer">
+                    Make sure all required fields are filled in (calcium, phosphate, PTH, vitamin D, and CKD stage). Values must be within realistic ranges.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">My data isn't syncing</div>
+                <div class="faq-answer">
+                    1. Check that iCloud is enabled in iOS Settings<br>
+                    2. Ensure you're signed in with the same Apple ID on all devices<br>
+                    3. Check your internet connection<br>
+                    4. Data may take a few moments to sync
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Purchase restore not working</div>
+                <div class="faq-answer">
+                    Go to Settings → Tap "Restore Purchases". Make sure you're signed in with the same Apple ID used for the original purchase.
+                </div>
+            </div>
+
+            <h2>Contact & Feedback</h2>
+            <p>We value your feedback! If you have:</p>
+            <ul>
+                <li>Questions about using the app</li>
+                <li>Suggestions for improvements</li>
+                <li>Bug reports</li>
+                <li>Feature requests</li>
+                <li>Privacy concerns</li>
+            </ul>
+            <p>Please email us at: <a href="mailto:smassservice@gmail.com" class="email-link">smassservice@gmail.com</a></p>
+
+            <h2>Important Notice</h2>
+            <p>This app is a clinical decision support tool and should not replace professional medical judgment. All recommendations must be interpreted in the context of individual patient circumstances. The app does not provide medical advice, diagnosis, or treatment.</p>
         </div>
 
         <div class="footer">
             <p><strong>© 2025 Paul Henien. All rights reserved.</strong></p>
-            <p>CKD-MBD Decision-Maker is a professional clinical decision support tool.</p>
-            <p><a href="privacy.html" style="color: #138ce5; text-decoration: none;">Privacy Policy</a></p>
+            <p><a href="privacy.html" style="color: #138ce5; text-decoration: none;">Privacy Policy</a> | <a href="mailto:smassservice@gmail.com" style="color: #138ce5; text-decoration: none;">Contact</a></p>
         </div>
     </div>
 </body>
 </html>
-
